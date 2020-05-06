@@ -1,0 +1,15 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@model IPagedList<Web_OnlineShop.ModelOnlineShop.User> 
+
+@{
+   
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@foreach(var item in Model)
+{
+    @item.Name
+}
+@Html.PagedListPager(Model, sotrang => Url.Action("Index", new { page = sotrang }))

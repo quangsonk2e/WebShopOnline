@@ -14,8 +14,8 @@ namespace Web_OnlineShop.ModelOnlineShop
         [StringLength(50)]
         public string UserName { get; set; }
 
-        [MaxLength(50)]
-        public byte[] Password { get; set; }
+        [StringLength(250)]
+        public string Password { get; set; }
 
         [StringLength(50)]
         public string Name { get; set; }
