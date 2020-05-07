@@ -40,8 +40,13 @@ namespace Web_OnlineShop.Areas.Admin.Controllers
         [HttpPost]
         public ActionResult Edit(User user)
         {
-           
-            return View();
+            long id=new UserDao().update(user);
+            return RedirectToAction("Index");
+        }
+        public ActionResult Delete(long id)
+        {
+            new UserDao().delete(id);
+            return RedirectToAction("Index");
         }
 	}
 }

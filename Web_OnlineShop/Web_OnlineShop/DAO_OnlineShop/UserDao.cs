@@ -36,5 +36,21 @@ namespace Web_OnlineShop.DAO_OnlineShop
             db.SaveChanges();
             return user.ID;
         }
+        public long update(User user)
+        {
+            var us = db.Users.Find(user.ID);
+            us.Name = user.Name;
+            us.UserName = user.UserName;
+            us.ModifieldDate = DateTime.Now;
+            db.SaveChanges();
+            return 1;
+        }
+        public long delete(long id)
+        {
+
+            db.Users.Remove(db.Users.Find(id));
+            db.SaveChanges();
+            return 1;
+        }
     }
 }
