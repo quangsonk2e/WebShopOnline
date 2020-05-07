@@ -23,13 +23,18 @@ namespace Web_OnlineShop.DAO_OnlineShop
             return db.Users.Count();
         }
        
-        public IEnumerable<User> getUserPage(int pageNumber=1, int pageSize=1)
+        public IEnumerable<User> getUserPage(int pageNumber=1)
         {
-            return db.Users.OrderBy(x=>x.CreatedDate).ToPagedList(pageNumber, pageSize);
+            return db.Users.OrderBy(x=>x.CreatedDate).ToPagedList(pageNumber, DEFINE.pageSize);
         }
-        public User getById(int id)
+        public User getById(long id)
         {
             return db.Users.SingleOrDefault(x => x.ID == id);
+        }
+        public long insert(User user){
+            db.Users.Add(user);
+            db.SaveChanges();
+            return user.ID;
         }
     }
 }

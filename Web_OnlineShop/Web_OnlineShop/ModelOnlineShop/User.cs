@@ -17,7 +17,7 @@ namespace Web_OnlineShop.ModelOnlineShop
         [StringLength(250)]
         public string Password { get; set; }
 
-        [StringLength(50)]
+        [StringLength(50)]        
         public string Name { get; set; }
 
         [StringLength(250)]

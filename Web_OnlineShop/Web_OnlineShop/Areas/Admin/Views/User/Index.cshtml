@@ -11,5 +11,7 @@
 @foreach(var item in Model)
 {
     @item.Name
+    <a href="@Url.Action("Edit", "User", new { id= item.ID})">@item.Name</a>
+                   
 }
 @Html.PagedListPager(Model, sotrang => Url.Action("Index", new { page = sotrang }))
