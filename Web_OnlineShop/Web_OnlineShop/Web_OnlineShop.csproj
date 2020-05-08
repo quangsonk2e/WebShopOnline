@@ -172,6 +172,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DAO_OnlineShop\DEFINE.cs" />
+    <Compile Include="DAO_OnlineShop\Helper.cs" />
     <Compile Include="DAO_OnlineShop\UserDao.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -199,15 +200,26 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="assets\css\sb-admin-2.css" />
-    <Content Include="assets\css\sb-admin-2.min.css" />
+    <Content Include="assets\css\ruang-admin.css" />
+    <Content Include="assets\css\ruang-admin.min.css" />
+    <Content Include="assets\font\OFL.txt" />
+    <Content Include="assets\img\boy.png" />
+    <Content Include="assets\img\error.svg" />
+    <Content Include="assets\img\girl.png" />
+    <Content Include="assets\img\innovation.svg" />
+    <Content Include="assets\img\logo\logo.png" />
+    <Content Include="assets\img\logo\logo2.png" />
+    <Content Include="assets\img\man.png" />
+    <Content Include="assets\img\screenshot\ss1.png" />
+    <Content Include="assets\img\think.svg" />
     <Content Include="assets\img\undraw_posting_photo.svg" />
     <Content Include="assets\js\demo\chart-area-demo.js" />
     <Content Include="assets\js\demo\chart-bar-demo.js" />
     <Content Include="assets\js\demo\chart-pie-demo.js" />
-    <Content Include="assets\js\demo\datatables-demo.js" />
-    <Content Include="assets\js\sb-admin-2.js" />
-    <Content Include="assets\js\sb-admin-2.min.js" />
+    <Content Include="assets\js\ruang-admin.js" />
+    <Content Include="assets\js\ruang-admin.min.js" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="assets\vendor\bootstrap\css\bootstrap.min.css" />
     <Content Include="assets\vendor\bootstrap\js\bootstrap.bundle.js" />
     <Content Include="assets\vendor\bootstrap\js\bootstrap.bundle.min.js" />
     <Content Include="assets\vendor\bootstrap\js\bootstrap.js" />
@@ -240,8 +252,6 @@
     <Content Include="assets\vendor\fontawesome-free\js\all.min.js" />
     <Content Include="assets\vendor\fontawesome-free\js\brands.js" />
     <Content Include="assets\vendor\fontawesome-free\js\brands.min.js" />
-    <Content Include="assets\vendor\fontawesome-free\js\conflict-detection.js" />
-    <Content Include="assets\vendor\fontawesome-free\js\conflict-detection.min.js" />
     <Content Include="assets\vendor\fontawesome-free\js\fontawesome.js" />
     <Content Include="assets\vendor\fontawesome-free\js\fontawesome.min.js" />
     <Content Include="assets\vendor\fontawesome-free\js\regular.js" />
@@ -327,7 +337,6 @@
     <Content Include="assets\vendor\fontawesome-free\svgs\brands\confluence.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\brands\connectdevelop.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\brands\contao.svg" />
-    <Content Include="assets\vendor\fontawesome-free\svgs\brands\cotton-bureau.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\brands\cpanel.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\brands\creative-commons-by.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\brands\creative-commons-nc-eu.svg" />
@@ -509,6 +518,7 @@
     <Content Include="assets\vendor\fontawesome-free\svgs\brands\napster.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\brands\neos.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\brands\nimblr.svg" />
+    <Content Include="assets\vendor\fontawesome-free\svgs\brands\nintendo-switch.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\brands\node-js.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\brands\node.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\brands\npm.svg" />
@@ -888,8 +898,6 @@
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\backspace.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\backward.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\bacon.svg" />
-    <Content Include="assets\vendor\fontawesome-free\svgs\solid\balance-scale-left.svg" />
-    <Content Include="assets\vendor\fontawesome-free\svgs\solid\balance-scale-right.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\balance-scale.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\ban.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\band-aid.svg" />
@@ -910,7 +918,6 @@
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\bezier-curve.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\bible.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\bicycle.svg" />
-    <Content Include="assets\vendor\fontawesome-free\svgs\solid\biking.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\binoculars.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\biohazard.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\birthday-cake.svg" />
@@ -929,9 +936,6 @@
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\book-reader.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\book.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\bookmark.svg" />
-    <Content Include="assets\vendor\fontawesome-free\svgs\solid\border-all.svg" />
-    <Content Include="assets\vendor\fontawesome-free\svgs\solid\border-none.svg" />
-    <Content Include="assets\vendor\fontawesome-free\svgs\solid\border-style.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\bowling-ball.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\box-open.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\box.svg" />
@@ -1138,7 +1142,6 @@
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\eye-dropper.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\eye-slash.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\eye.svg" />
-    <Content Include="assets\vendor\fontawesome-free\svgs\solid\fan.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\fast-backward.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\fast-forward.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\fax.svg" />
@@ -1300,7 +1303,6 @@
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\i-cursor.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\ice-cream.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\icicles.svg" />
-    <Content Include="assets\vendor\fontawesome-free\svgs\solid\icons.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\id-badge.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\id-card-alt.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\id-card.svg" />
@@ -1452,13 +1454,10 @@
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\percent.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\percentage.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\person-booth.svg" />
-    <Content Include="assets\vendor\fontawesome-free\svgs\solid\phone-alt.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\phone-slash.svg" />
-    <Content Include="assets\vendor\fontawesome-free\svgs\solid\phone-square-alt.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\phone-square.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\phone-volume.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\phone.svg" />
-    <Content Include="assets\vendor\fontawesome-free\svgs\solid\photo-video.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\piggy-bank.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\pills.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\pizza-slice.svg" />
@@ -1506,7 +1505,6 @@
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\redo-alt.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\redo.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\registered.svg" />
-    <Content Include="assets\vendor\fontawesome-free\svgs\solid\remove-format.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\reply-all.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\reply.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\republican.svg" />
@@ -1587,24 +1585,17 @@
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\snowplow.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\socks.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\solar-panel.svg" />
-    <Content Include="assets\vendor\fontawesome-free\svgs\solid\sort-alpha-down-alt.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\sort-alpha-down.svg" />
-    <Content Include="assets\vendor\fontawesome-free\svgs\solid\sort-alpha-up-alt.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\sort-alpha-up.svg" />
-    <Content Include="assets\vendor\fontawesome-free\svgs\solid\sort-amount-down-alt.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\sort-amount-down.svg" />
-    <Content Include="assets\vendor\fontawesome-free\svgs\solid\sort-amount-up-alt.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\sort-amount-up.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\sort-down.svg" />
-    <Content Include="assets\vendor\fontawesome-free\svgs\solid\sort-numeric-down-alt.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\sort-numeric-down.svg" />
-    <Content Include="assets\vendor\fontawesome-free\svgs\solid\sort-numeric-up-alt.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\sort-numeric-up.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\sort-up.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\sort.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\spa.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\space-shuttle.svg" />
-    <Content Include="assets\vendor\fontawesome-free\svgs\solid\spell-check.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\spider.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\spinner.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\splotch.svg" />
@@ -1762,7 +1753,6 @@
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\video-slash.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\video.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\vihara.svg" />
-    <Content Include="assets\vendor\fontawesome-free\svgs\solid\voicemail.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\volleyball-ball.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\volume-down.svg" />
     <Content Include="assets\vendor\fontawesome-free\svgs\solid\volume-mute.svg" />
@@ -1805,6 +1795,45 @@
     <Content Include="Content\PagedList.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\MenuLeft.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\menuTop.cshtml" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\_RemoveAccountPartial.cshtml" />
+    <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Manage.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="Areas\Admin\Views\User\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Edit.cshtml" />
+    <Content Include="assets\font\Nunito-Regular.ttf" />
+    <Content Include="assets\img\logo\logo.ai" />
     <Content Include="assets\scss\navs\_global.scss" />
     <Content Include="assets\scss\navs\_sidebar.scss" />
     <Content Include="assets\scss\navs\_topbar.scss" />
@@ -1939,7 +1968,6 @@
     <Content Include="assets\vendor\fontawesome-free\less\_shims.less" />
     <Content Include="assets\vendor\fontawesome-free\less\_stacked.less" />
     <Content Include="assets\vendor\fontawesome-free\less\_variables.less" />
-    <Content Include="assets\vendor\fontawesome-free\package.json" />
     <Content Include="assets\vendor\fontawesome-free\scss\brands.scss" />
     <Content Include="assets\vendor\fontawesome-free\scss\fontawesome.scss" />
     <Content Include="assets\vendor\fontawesome-free\scss\regular.scss" />
@@ -1972,43 +2000,6 @@
     <Content Include="assets\vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
     <Content Include="assets\vendor\jquery\jquery.min.map" />
     <Content Include="assets\vendor\jquery\jquery.slim.min.map" />
-    <Content Include="Areas\Admin\Views\web.config" />
-    <Content Include="Areas\Admin\Views\Shared\_LayoutAdmin.cshtml" />
-    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\Shared\MenuLeft.cshtml" />
-    <Content Include="Areas\Admin\Views\Shared\menuTop.cshtml" />
-    <Content Include="Web.config" />
-    <Content Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
-    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
-    <Content Include="Views\Account\_RemoveAccountPartial.cshtml" />
-    <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
-    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
-    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
-    <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Account\Manage.cshtml" />
-    <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Models\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="packages.config" />
-    <Content Include="Areas\Admin\Views\User\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\User\Create.cshtml" />
-    <Content Include="Areas\Admin\Views\User\Edit.cshtml" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <PropertyGroup>

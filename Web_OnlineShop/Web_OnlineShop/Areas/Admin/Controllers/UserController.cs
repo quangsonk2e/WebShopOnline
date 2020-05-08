@@ -28,9 +28,10 @@ namespace Web_OnlineShop.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
+                user.Password = Helper.MD5Hash(user.Password);
                 new UserDao().insert(user);
             }
-            return View();
+            return RedirectToAction("Index");
         }
         [HttpGet]
         public ActionResult Edit(long id){
@@ -40,7 +41,11 @@ namespace Web_OnlineShop.Areas.Admin.Controllers
         [HttpPost]
         public ActionResult Edit(User user)
         {
+            if (ModelState.IsValid)
+            {
+            user.Password = Helper.MD5Hash(user.Password);
             long id=new UserDao().update(user);
+            }
             return RedirectToAction("Index");
         }
         public ActionResult Delete(long id)
