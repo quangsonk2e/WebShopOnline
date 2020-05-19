@@ -1,4 +1,4 @@
-<%@ Control Language="C#" EnableViewState="false" AutoEventWireup="false" Inherits="CKFinder.Settings.ConfigFile" %>
+﻿<%@ Control Language="C#" EnableViewState="false" AutoEventWireup="false" Inherits="CKFinder.Settings.ConfigFile" %>
 <%@ Import Namespace="CKFinder.Settings" %>
 <script runat="server">
 
@@ -27,8 +27,8 @@
 	{
 		// Paste your license name and key here. If left blank, CKFinder will
 		// be fully functional, in Demo Mode.
-		LicenseName = "";
-		LicenseKey = "";
+        LicenseName = "lại quang việt";
+        LicenseKey = "LJFQENXK2CAY14BPKWREFQMF9QF856BJ";
 
 		// The base URL used to reach files in CKFinder through the browser.
 		BaseUrl = "/Uploads/";
