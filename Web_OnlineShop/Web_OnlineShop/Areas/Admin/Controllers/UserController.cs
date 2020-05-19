@@ -23,7 +23,7 @@ namespace Web_OnlineShop.Areas.Admin.Controllers
         {
             return View();
         }
-        [HttpPost]
+        [HttpPost, ValidateInput(false)]
         public ActionResult Create(User user)
         {
             if (ModelState.IsValid)
