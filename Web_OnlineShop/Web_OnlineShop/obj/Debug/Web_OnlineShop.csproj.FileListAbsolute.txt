@@ -230,3 +230,11 @@ D:\code\webMVC\Shoponline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\Micros
 D:\code\webMVC\Shoponline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\obj\Debug\Web_OnlineShop.csprojResolveAssemblyReference.cache
 D:\code\webMVC\Shoponline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\obj\Debug\Web_OnlineShop.dll
 D:\code\webMVC\Shoponline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\obj\Debug\Web_OnlineShop.pdb
+D:\code\webMVC\Shoponline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder.dll
+D:\code\webMVC\Shoponline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder_FileEditor.dll
+D:\code\webMVC\Shoponline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder_ImageResize.dll
+D:\code\webMVC\Shoponline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder_Watermark.dll
+D:\code\webMVC\Shoponline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder.pdb
+D:\code\webMVC\Shoponline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder_FileEditor.pdb
+D:\code\webMVC\Shoponline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder_ImageResize.pdb
+D:\code\webMVC\Shoponline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder_Watermark.pdb
