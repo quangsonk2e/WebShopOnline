@@ -32,6 +32,7 @@ namespace Web_OnlineShop.DAO_OnlineShop
         }
         public long insert(Product Product)
         {
+            Product.CreatedDate = DateTime.Now;
             db.Products.Add(Product);
             db.SaveChanges();
             return Product.ID;

@@ -19,6 +19,7 @@ namespace Web_OnlineShop.Areas.Admin.Controllers
         }
         [HttpGet]
         public ActionResult Create(){
+            setProductCategory();
             return View();
         }
         [HttpPost, ValidateInput(false)]
@@ -26,15 +27,23 @@ namespace Web_OnlineShop.Areas.Admin.Controllers
         {
              if (ModelState.IsValid)
             {
+               
                 new ProductDao().insert(product);
             }
+            
              return RedirectToAction("Index");
         }
         [HttpGet]
         public ActionResult Edit(long id)
         {
-            var Model = new UserDao().getById(id);
-            return View(Model);
+            var Model = new ProductDao().getById(id);
+            if (Model != null)
+                setProductCategory(Model.CategoryID);
+            else
+                setProductCategory();
+                
+           return View(Model);
+           
         }
         [HttpPost]
         public ActionResult Edit(Product product)
@@ -50,6 +59,10 @@ namespace Web_OnlineShop.Areas.Admin.Controllers
         {
             new ProductDao().delete(id);
             return RedirectToAction("Index");
+        }
+        public void setProductCategory(long? selectedID=null)
+        {
+            ViewBag.CategoryID = new SelectList(new ProductCategoryDao().getAll(), "ID", "Name", selectedID);
         }
 	}
 }

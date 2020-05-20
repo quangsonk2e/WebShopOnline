@@ -32,6 +32,7 @@ namespace Web_OnlineShop.DAO_OnlineShop
             return db.Users.SingleOrDefault(x => x.ID == id);
         }
         public long insert(User user){
+            user.CreatedDate = DateTime.Now;
             db.Users.Add(user);
             db.SaveChanges();
             return user.ID;
@@ -39,6 +40,7 @@ namespace Web_OnlineShop.DAO_OnlineShop
         public long update(User user)
         {
             var us = db.Users.Find(user.ID);
+            us.CreatedDate = DateTime.Now;
             us.Name = user.Name;
             us.UserName = user.UserName;
             us.ModifieldDate = DateTime.Now;

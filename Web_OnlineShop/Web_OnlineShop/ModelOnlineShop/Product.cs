@@ -2,6 +2,7 @@ namespace Web_OnlineShop.ModelOnlineShop
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
@@ -33,7 +34,7 @@ namespace Web_OnlineShop.ModelOnlineShop
 
         public decimal? PromotionPrice { get; set; }
 
-        public bool? IncludeVAT { get; set; }
+        public bool IncludeVAT { get; set; }
 
         public int? Quantity { get; set; }
 
@@ -43,12 +44,13 @@ namespace Web_OnlineShop.ModelOnlineShop
         public string Detail { get; set; }
 
         public int? Warranty { get; set; }
-
+       
         public DateTime? CreatedDate { get; set; }
 
         [StringLength(50)]
         public string CreateBy { get; set; }
 
+        
         public DateTime? ModifieldDate { get; set; }
 
         [StringLength(50)]

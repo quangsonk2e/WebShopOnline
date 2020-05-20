@@ -184,9 +184,22 @@
     <Compile Include="Areas\Admin\Controllers\UserController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="DAO_OnlineShop\AboutDao.cs" />
+    <Compile Include="DAO_OnlineShop\CategoryDao.cs" />
+    <Compile Include="DAO_OnlineShop\ContactDao.cs" />
+    <Compile Include="DAO_OnlineShop\ContentDao.cs" />
+    <Compile Include="DAO_OnlineShop\ContentTagDao.cs" />
     <Compile Include="DAO_OnlineShop\DEFINE.cs" />
+    <Compile Include="DAO_OnlineShop\FeedbackDao.cs" />
+    <Compile Include="DAO_OnlineShop\FooterDao.cs" />
     <Compile Include="DAO_OnlineShop\Helper.cs" />
+    <Compile Include="DAO_OnlineShop\MenuDao.cs" />
+    <Compile Include="DAO_OnlineShop\MenuTypeDao.cs" />
+    <Compile Include="DAO_OnlineShop\ProductCategoryDao.cs" />
     <Compile Include="DAO_OnlineShop\ProductDao.cs" />
+    <Compile Include="DAO_OnlineShop\SlideDao.cs" />
+    <Compile Include="DAO_OnlineShop\SystemConfigDao.cs" />
+    <Compile Include="DAO_OnlineShop\TagDao.cs" />
     <Compile Include="DAO_OnlineShop\UserDao.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -1281,6 +1294,8 @@
     <Content Include="assets\js\demo\chart-area-demo.js" />
     <Content Include="assets\js\demo\chart-bar-demo.js" />
     <Content Include="assets\js\demo\chart-pie-demo.js" />
+    <Content Include="assets\js\jquery.mask.js" />
+    <Content Include="assets\js\main.js" />
     <Content Include="assets\js\ruang-admin.js" />
     <Content Include="assets\js\ruang-admin.min.js" />
     <Content Include="assets\vendor\bootstrap\css\bootstrap.css" />
