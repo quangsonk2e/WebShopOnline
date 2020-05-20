@@ -21,11 +21,35 @@ namespace Web_OnlineShop.Areas.Admin.Controllers
         public ActionResult Create(){
             return View();
         }
-        [HttpPost]
+        [HttpPost, ValidateInput(false)]
         public ActionResult Create(Product product)
         {
+             if (ModelState.IsValid)
+            {
+                new ProductDao().insert(product);
+            }
+             return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public ActionResult Edit(long id)
+        {
+            var Model = new UserDao().getById(id);
+            return View(Model);
+        }
+        [HttpPost]
+        public ActionResult Edit(Product product)
+        {
+            if (ModelState.IsValid)
+            {
 
-            return View();
+                long id = new ProductDao().update(product);
+            }
+            return RedirectToAction("Index");
+        }
+        public ActionResult Delete(long id)
+        {
+            new ProductDao().delete(id);
+            return RedirectToAction("Index");
         }
 	}
 }
