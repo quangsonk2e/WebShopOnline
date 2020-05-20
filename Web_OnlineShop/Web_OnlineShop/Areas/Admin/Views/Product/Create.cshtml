@@ -3,7 +3,9 @@
 @{
     ViewBag.Title = "Create";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+   
 }
+
 <div class="container">
     @*<h2>Create</h2>*@
     <div class="card mb-4">
@@ -56,9 +58,12 @@
 
                     <div class="form-group row">
                         @Html.LabelFor(model => model.Image, new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.TextBoxFor(model => model.Image, new { @class = "form-control" })
+                        <div class="col-md-6">
+                            @Html.TextBoxFor(model => model.Image, new { @class = "form-control", id="image" })
                             @Html.ValidationMessageFor(model => model.Image)
+                        </div>
+                        <div class="col-md-4">
+                            <input type="button" value="Chọn ảnh..." onclick="BrowseServer();" class="btn btn-info" />
                         </div>
                     </div>
 
@@ -66,6 +71,7 @@
                         @Html.LabelFor(model => model.MoreImages, new { @class = "control-label col-md-2" })
                         <div class="col-md-10">
                             @Html.TextBoxFor(model => model.MoreImages, new { @class = "form-control" })
+                            
                             @Html.ValidationMessageFor(model => model.MoreImages)
                         </div>
                     </div>
@@ -89,7 +95,7 @@
                     <div class="form-group row">
                         @Html.LabelFor(model => model.IncludeVAT, new { @class = "control-label col-md-2" })
                         <div class="col-md-10">
-                            @Html.TextBoxFor(model => model.IncludeVAT, new { @class = "form-control" })
+                            @Html.EditorFor(model => model.IncludeVAT, new { @class = "form-control" })
                             @Html.ValidationMessageFor(model => model.IncludeVAT)
                         </div>
                     </div>
@@ -145,14 +151,19 @@
                             @Html.ValidationMessageFor(model => model.MetaDescriptions)
                         </div>
                     </div>
-
+                   
                     <div class="form-group row">
+                       
+                        
                         @Html.LabelFor(model => model.Status, new { @class = "control-label col-md-2" })
                         <div class="col-md-10">
-                            @Html.TextBoxFor(model => model.Status, new { @class = "form-control" })
+                            @Html.EditorFor(model => model.Status, new { @class = "form-control" })
+                           
                             @Html.ValidationMessageFor(model => model.Status)
                         </div>
                     </div>
+
+                    
 
                     <div class="form-group row">
                         @Html.LabelFor(model => model.TopHot, new { @class = "control-label col-md-2" })
