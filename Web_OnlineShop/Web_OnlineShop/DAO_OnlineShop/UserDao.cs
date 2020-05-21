@@ -40,7 +40,7 @@ namespace Web_OnlineShop.DAO_OnlineShop
         public long update(User user)
         {
             var us = db.Users.Find(user.ID);
-            us.CreatedDate = DateTime.Now;
+            us.ModifieldDate = DateTime.Now;
             us.Name = user.Name;
             us.UserName = user.UserName;
             us.ModifieldDate = DateTime.Now;

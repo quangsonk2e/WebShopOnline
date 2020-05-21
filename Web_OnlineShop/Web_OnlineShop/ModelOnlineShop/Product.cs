@@ -13,25 +13,30 @@ namespace Web_OnlineShop.ModelOnlineShop
         public long ID { get; set; }
 
         [StringLength(250)]
+        [Display(Name = "Tên sản phẩm")]
         public string Name { get; set; }
 
         [StringLength(10)]
+        [Display(Name = "mã sản phẩm")]
         public string Code { get; set; }
 
         [StringLength(250)]
         public string MetaTitle { get; set; }
 
         [StringLength(250)]
+        [Display(Name = "Mô tả")]
         public string Description { get; set; }
 
         [StringLength(250)]
+        [Display(Name = "Ảnh")]
         public string Image { get; set; }
 
         [Column(TypeName = "xml")]
         public string MoreImages { get; set; }
 
+        [Display(Name = "Giá")]
         public decimal? Price { get; set; }
-
+        [Display(Name = "Giá khuyến mại")]
         public decimal? PromotionPrice { get; set; }
 
         public bool IncludeVAT { get; set; }

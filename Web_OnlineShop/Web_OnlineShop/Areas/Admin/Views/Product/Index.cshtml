@@ -38,7 +38,7 @@
                                 <td>@item.Name</td>
                                 <td>@item.Code</td>
                                 <td>@item.Description</td>
-                                <td>@item.Price</td>
+                                <td>@string.Format("{0:#,0}",item.Price)</td>
                                 <td>@item.PromotionPrice</td>
                                 <td>@item.CreatedDate.Value.ToString("dd/MM/yyyy")</td>
                                 <td><a class="btn btn-primary" href="@Url.Action("Edit", "Product", new { id= item.ID})">Sửa</a>-<a class="btn btn-primary" href="@Url.Action("Delete", "Product", new { id = item.ID })">Xóa</a></td>

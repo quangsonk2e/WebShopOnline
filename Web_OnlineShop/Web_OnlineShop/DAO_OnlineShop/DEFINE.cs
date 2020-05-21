@@ -7,7 +7,7 @@ namespace Web_OnlineShop.DAO_OnlineShop
 {
     public class DEFINE
     {
-        public const int pageSize = 1;
+        public const int pageSize = 10;
         public const string USERSESSION = "USERSESSION";
     }
 }

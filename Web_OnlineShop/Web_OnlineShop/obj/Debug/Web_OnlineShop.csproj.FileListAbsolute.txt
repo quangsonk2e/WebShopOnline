@@ -227,7 +227,6 @@ D:\code\webMVC\Shoponline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\Micros
 D:\code\webMVC\Shoponline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\Microsoft.Owin.Security.Google.xml
 D:\code\webMVC\Shoponline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\Microsoft.Owin.Security.Twitter.xml
 D:\code\webMVC\Shoponline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-D:\code\webMVC\Shoponline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\obj\Debug\Web_OnlineShop.csprojResolveAssemblyReference.cache
 D:\code\webMVC\Shoponline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\obj\Debug\Web_OnlineShop.dll
 D:\code\webMVC\Shoponline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\obj\Debug\Web_OnlineShop.pdb
 D:\code\webMVC\Shoponline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder.dll
@@ -304,3 +303,4 @@ D:\code\Web MVC\shopOnline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFin
 D:\code\Web MVC\shopOnline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder_FileEditor.pdb
 D:\code\Web MVC\shopOnline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder_ImageResize.pdb
 D:\code\Web MVC\shopOnline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder_Watermark.pdb
+D:\code\webMVC\Shoponline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\obj\Debug\Web_OnlineShop.csprojResolveAssemblyReference.cache

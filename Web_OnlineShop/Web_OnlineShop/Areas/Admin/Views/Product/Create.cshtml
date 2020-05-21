@@ -78,9 +78,15 @@
 
                     <div class="form-group row">
                         @Html.LabelFor(model => model.Price, new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.TextBoxFor(model => model.Price, new { @class = "form-control money" })
+                        <div class="col-md-4">
+                            @Html.HiddenFor(model => model.Price, new { id="price", @class = "form-control price" })
+                            <input type="text" id="money" class="form-control money text-right" />
                             @Html.ValidationMessageFor(model => model.Price)
+                        </div>
+                        @Html.LabelFor(model => model.PromotionPrice, new { @class = "control-label col-md-2" })
+                        <div class="col-md-4">
+                            @Html.TextBoxFor(model => model.PromotionPrice, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.PromotionPrice)
                         </div>
                     </div>
 
