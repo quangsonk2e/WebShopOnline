@@ -35,19 +35,26 @@ namespace Web_OnlineShop.ModelOnlineShop
         public string MoreImages { get; set; }
 
         [Display(Name = "Giá")]
+        [Range(0, 9999999999999999)]
         public decimal? Price { get; set; }
+
         [Display(Name = "Giá khuyến mại")]
         public decimal? PromotionPrice { get; set; }
 
+        [Display(Name = "Đã bao gồm VAT")]
         public bool IncludeVAT { get; set; }
 
+        [Display(Name = "Số lượng")]
         public int? Quantity { get; set; }
 
+        [Display(Name = "Nhóm sản phẩm")]
         public long? CategoryID { get; set; }
 
         [Column(TypeName = "ntext")]
+        [Display(Name = "Chi tiết")]
         public string Detail { get; set; }
 
+        [Display(Name = "Thời gian bảo hành")]
         public int? Warranty { get; set; }
        
         public DateTime? CreatedDate { get; set; }
@@ -64,12 +71,14 @@ namespace Web_OnlineShop.ModelOnlineShop
         [StringLength(250)]
         public string MetaKeywords { get; set; }
 
-        [StringLength(250)]        
+        [StringLength(250)]
+        
         public string MetaDescriptions { get; set; }
 
-        
+        [Display(Name = "Tình trạng")]
         public bool Status { get; set; }
 
+        [Display(Name = "Là sản phẩm Hot  (số ngày)")]
         public DateTime? TopHot { get; set; }
     }
 }
