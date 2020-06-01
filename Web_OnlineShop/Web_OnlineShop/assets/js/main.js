@@ -12,10 +12,10 @@
 
     
 //});
-$('form#ProductCreate').submit(function () {
+$('form#form').submit(function () {
     $('.money').each(function(){
         $(this).val($(this).val().replace(/\./gi, ''));
-        alert($(this).val());
+        //alert($(this).val());
     });
 
        

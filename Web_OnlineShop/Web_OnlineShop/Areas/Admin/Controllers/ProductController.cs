@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Script.Serialization;
+using System.Xml.Linq;
 using Web_OnlineShop.DAO_OnlineShop;
 using Web_OnlineShop.ModelOnlineShop;
 
@@ -45,7 +47,7 @@ namespace Web_OnlineShop.Areas.Admin.Controllers
            return View(Model);
            
         }
-        [HttpPost]
+        [HttpPost, ValidateInput(false)]
         public ActionResult Edit(Product product)
         {
             if (ModelState.IsValid)
@@ -63,6 +65,20 @@ namespace Web_OnlineShop.Areas.Admin.Controllers
         public void setProductCategory(long? selectedID=null)
         {
             ViewBag.CategoryID = new SelectList(new ProductCategoryDao().getAll(), "ID", "Name", selectedID);
+        }
+        [HttpPost]
+        public JsonResult SaveImages(long id, string images)
+        {
+            JavaScriptSerializer serializer = new JavaScriptSerializer();
+            var listImages = serializer.Deserialize<List<string>>(images);
+            XElement xElement = new XElement("Images");
+            foreach (var item in listImages)
+            {
+                xElement.Add(new XElement("Images", item));
+
+            }
+            ProductDao dao = new ProductDao();
+            return Json(1);
         }
 	}
 }

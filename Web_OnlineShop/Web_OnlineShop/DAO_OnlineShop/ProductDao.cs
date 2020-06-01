@@ -41,8 +41,31 @@ namespace Web_OnlineShop.DAO_OnlineShop
         {
             var us = db.Products.Find(Product.ID);
             us.Name = Product.Name;
+            us.CategoryID = Product.CategoryID;
+            us.Code = Product.Code;
+            us.Description = Product.Description;
+            us.Detail = Product.Detail;
+            us.Image = Product.Image;
+            us.IncludeVAT = Product.IncludeVAT;
+            us.MetaDescriptions = Product.MetaDescriptions;
+            us.MetaKeywords = Product.MetaKeywords;
+            us.MetaTitle = Product.MetaTitle;
+            us.MoreImages = Product.MoreImages;
+            us.Price = Product.Price;
+            us.PromotionPrice = Product.PromotionPrice;
+            us.Quantity = Product.Quantity;
+            us.Status = Product.Status;
+            us.TopHot = Product.TopHot;
+            us.Warranty = Product.Warranty;
             //us.ProductName = Product.ProductName;
             //us.ModifieldDate = DateTime.Now;
+            db.SaveChanges();
+            return 1;
+        }
+        public long updateImages(long id, string Images)
+        {
+            var product = db.Products.Find(id);
+            product.MoreImages = Images;
             db.SaveChanges();
             return 1;
         }

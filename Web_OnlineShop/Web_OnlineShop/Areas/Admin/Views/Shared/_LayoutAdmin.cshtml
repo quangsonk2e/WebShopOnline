@@ -78,6 +78,47 @@
         function setFile(fileUrl) {
             document.getElementById('image').value = fileUrl;
         }
+        function managerImages() {
+            
+            var finder = new CKFinder();
+            finder.basePath = '~/assets/ckfinder';
+            finder.selectActionFunction = selectImage;
+            finder.popup();
+        }
+        function selectImage(fileUrl) {
+            $('#imageList').append('<div style="float:left;"><image src="'+fileUrl+'" width="100"/><a class="btn-delImage" href="#"><i class="fa fa-times"></i></a></div>')
+            //document.getElementById('imageList').value = fileUrl;
+           
+        }
+        $('#btnImages').off('click').on('click', function (e) {
+            e.preventDefault();
+            $('#exampleModal').modal('show');
+            $('#idProduct').val($(this).data('id'));
+
+        });
+        $('#exampleModal').on('click', '.btn-delImage', function (e) {
+            e.preventDefault();
+            $(this).parent().remove();
+        });
+        $('#btnSaveImages').off('click').on('click', function () {
+            var images = [];
+            var id=$('#idProduct').val();
+            $.each($('#imageList img'), function (i, item) {
+                images.push($(item).prop('src'));
+            });
+            $.ajax({
+                url: '/Admin/Product/SaveImages',
+                type: '',
+                data: {
+                    id: id,
+                    images:JSON.stringify(images)
+                },
+                dataType:'json',
+            success: function(response){
+                $('#exampleModal').modal('hide');
+            }
+            });
+        });
     </script>
 </body>
 

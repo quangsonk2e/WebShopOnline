@@ -27,6 +27,7 @@
                             <th>Giá</th>
                             <th>Giá khuyến mại</th>
                             <th>Ngày tạo</th>
+                            <th>Ảnh</th>
                             <th>Thao tác</th>
                         </tr>
                     </thead>
@@ -41,6 +42,7 @@
                                 <td>@string.Format("{0:#,0}",item.Price)</td>
                                 <td>@item.PromotionPrice</td>
                                 <td>@item.CreatedDate.Value.ToString("dd/MM/yyyy")</td>
+                                <td><a href="#" data-id="@item.ID" id="btnImages">Quản lý ảnh..</a></td>
                                 <td><a class="btn btn-primary" href="@Url.Action("Edit", "Product", new { id= item.ID})">Sửa</a>-<a class="btn btn-primary" href="@Url.Action("Delete", "Product", new { id = item.ID })">Xóa</a></td>
                             </tr>
                         }
@@ -59,6 +61,35 @@
         </div>
     </div>
 </div>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                
+                <div id="imageList">
 
+                </div>
+                <input type="hidden" id="idProduct"/>
+                <div class="row col-md-12">
+                    <button class="btn btn-primary" id="selectImage" onclick="managerImages()">Chọn ảnh</button>
+                </div>
+               
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" id="btnSaveImages" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
