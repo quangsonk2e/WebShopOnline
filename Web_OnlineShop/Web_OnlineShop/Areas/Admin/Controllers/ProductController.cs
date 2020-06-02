@@ -78,7 +78,39 @@ namespace Web_OnlineShop.Areas.Admin.Controllers
 
             }
             ProductDao dao = new ProductDao();
-            return Json(1);
+           try 
+	        {	        
+		        dao.updateImages(id, xElement.ToString());
+                    return Json(new { 
+                    status= true
+                    });
+	        }
+	        catch (Exception ex)
+	        {
+                return Json(new
+                {
+                    status=false
+                });
+		
+	        } 
         }
+        public JsonResult LoadImages(long id){
+            ProductDao dao = new ProductDao();
+            var product = dao.getById(id);
+            var images = product.MoreImages;
+            XElement xImages = XElement.Parse(images);
+            List<string> lisImagesreturn = new List<string>();
+            foreach (XElement element in xImages.Elements())
+            {
+                lisImagesreturn.Add(element.Value);
+            }
+            return Json(new
+            {
+                data = lisImagesreturn
+            }, JsonRequestBehavior.AllowGet);
+        }
+
+
+
 	}
 }

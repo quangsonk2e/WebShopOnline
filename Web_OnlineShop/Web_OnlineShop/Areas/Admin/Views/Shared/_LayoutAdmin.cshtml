@@ -93,7 +93,23 @@
         $('#btnImages').off('click').on('click', function (e) {
             e.preventDefault();
             $('#exampleModal').modal('show');
+            var id = $(this).data('id') ;
             $('#idProduct').val($(this).data('id'));
+
+            $.ajax({
+                url: '/Admin/Product/LoadImages',
+                type: 'GET',
+                data: { id: id },
+                dataType: 'json',
+                success: function (response) {
+                    var data = response.data;
+                    var html = '';
+                    $.each(data, function (i, item) {
+                        html += '<div style="float:left"><img src="' + item + '" width="100" /><a href="#" class="btn-delImage"><i class="fa fa-times"></i></a></div>';
+                    });
+                    $('#imageList').html(html);
+                }
+            });
 
         });
         $('#exampleModal').on('click', '.btn-delImage', function (e) {
@@ -108,7 +124,7 @@
             });
             $.ajax({
                 url: '/Admin/Product/SaveImages',
-                type: '',
+                type: 'POST',
                 data: {
                     id: id,
                     images:JSON.stringify(images)
@@ -116,7 +132,7 @@
                 dataType:'json',
             success: function(response){
                 $('#exampleModal').modal('hide');
-            }
+                }
             });
         });
     </script>
