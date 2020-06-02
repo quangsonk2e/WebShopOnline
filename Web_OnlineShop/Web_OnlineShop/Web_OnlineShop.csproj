@@ -224,6 +224,7 @@
     <Compile Include="ModelOnlineShop\SystemConfig.cs" />
     <Compile Include="ModelOnlineShop\Tag.cs" />
     <Compile Include="ModelOnlineShop\User.cs" />
+    <Compile Include="ModelOnlineShop\UserGroup.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
