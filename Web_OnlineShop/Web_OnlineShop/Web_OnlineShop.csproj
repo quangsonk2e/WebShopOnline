@@ -40,16 +40,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CKFinder">
-      <HintPath>C:\Users\MRQUANGSON\Downloads\ckfinder\bin\Debug\CKFinder.dll</HintPath>
+      <HintPath>..\..\..\..\..\dl\ckfinder\bin\Debug\CKFinder.dll</HintPath>
     </Reference>
     <Reference Include="CKFinder_FileEditor">
-      <HintPath>C:\Users\MRQUANGSON\Downloads\ckfinder\bin\Debug\CKFinder_FileEditor.dll</HintPath>
+      <HintPath>..\..\..\..\..\dl\ckfinder\bin\Debug\CKFinder_FileEditor.dll</HintPath>
     </Reference>
     <Reference Include="CKFinder_ImageResize">
-      <HintPath>C:\Users\MRQUANGSON\Downloads\ckfinder\bin\Debug\CKFinder_ImageResize.dll</HintPath>
+      <HintPath>..\..\..\..\..\dl\ckfinder\bin\Debug\CKFinder_ImageResize.dll</HintPath>
     </Reference>
     <Reference Include="CKFinder_Watermark">
-      <HintPath>C:\Users\MRQUANGSON\Downloads\ckfinder\bin\Debug\CKFinder_Watermark.dll</HintPath>
+      <HintPath>..\..\..\..\..\dl\ckfinder\bin\Debug\CKFinder_Watermark.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="PagedList">
@@ -185,6 +185,7 @@
     <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
     <Compile Include="Areas\Admin\Controllers\UserController.cs" />
     <Compile Include="Areas\Admin\Models\modelLogin.cs" />
+    <Compile Include="Common\HasCredentialAttribute.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DAO_OnlineShop\AboutDao.cs" />
@@ -212,15 +213,16 @@
     <Compile Include="ModelOnlineShop\Contact.cs" />
     <Compile Include="ModelOnlineShop\Content.cs" />
     <Compile Include="ModelOnlineShop\ContentTag.cs" />
+    <Compile Include="ModelOnlineShop\Credential.cs" />
     <Compile Include="ModelOnlineShop\Feedback.cs" />
     <Compile Include="ModelOnlineShop\Footer.cs" />
     <Compile Include="ModelOnlineShop\Menu.cs" />
     <Compile Include="ModelOnlineShop\MenuType.cs" />
+    <Compile Include="ModelOnlineShop\Shop.cs" />
     <Compile Include="ModelOnlineShop\Product.cs" />
     <Compile Include="ModelOnlineShop\ProductCategory.cs" />
-    <Compile Include="ModelOnlineShop\Shop.cs" />
+    <Compile Include="ModelOnlineShop\Role.cs" />
     <Compile Include="ModelOnlineShop\Slide.cs" />
-    <Compile Include="ModelOnlineShop\sysdiagram.cs" />
     <Compile Include="ModelOnlineShop\SystemConfig.cs" />
     <Compile Include="ModelOnlineShop\Tag.cs" />
     <Compile Include="ModelOnlineShop\User.cs" />
@@ -637,21 +639,6 @@
     <Content Include="assets\ckeditor\skins\moono-lisa\images\spinner.gif" />
     <Content Include="assets\ckeditor\styles.js" />
     <Content Include="assets\ckeditor\vendor\promise.js" />
-    <Content Include="assets\ckfinder\bin\Debug\CKFinder.dll" />
-    <Content Include="assets\ckfinder\bin\Debug\CKFinder.pdb" />
-    <Content Include="assets\ckfinder\bin\Debug\CKFinder_FileEditor.dll" />
-    <Content Include="assets\ckfinder\bin\Debug\CKFinder_FileEditor.pdb" />
-    <Content Include="assets\ckfinder\bin\Debug\CKFinder_ImageResize.dll" />
-    <Content Include="assets\ckfinder\bin\Debug\CKFinder_ImageResize.pdb" />
-    <Content Include="assets\ckfinder\bin\Debug\CKFinder_Watermark.dll" />
-    <Content Include="assets\ckfinder\bin\Debug\CKFinder_Watermark.pdb" />
-    <Content Include="assets\ckfinder\bin\Release\CKFinder.dll" />
-    <Content Include="assets\ckfinder\bin\Release\CKFinder_FileEditor.dll" />
-    <Content Include="assets\ckfinder\bin\Release\CKFinder_FileEditor.pdb" />
-    <Content Include="assets\ckfinder\bin\Release\CKFinder_ImageResize.dll" />
-    <Content Include="assets\ckfinder\bin\Release\CKFinder_ImageResize.pdb" />
-    <Content Include="assets\ckfinder\bin\Release\CKFinder_Watermark.dll" />
-    <Content Include="assets\ckfinder\bin\Release\CKFinder_Watermark.pdb" />
     <Content Include="assets\ckfinder\changelog.txt" />
     <Content Include="assets\ckfinder\ckfinder.html" />
     <Content Include="assets\ckfinder\ckfinder.js" />
@@ -2890,7 +2877,9 @@
     <Content Include="Uploads\_thumbs\Images\0d088300f3200b7e5231.jpg" />
     <Content Include="Uploads\_thumbs\Images\3fe864e914c9ec97b5d8.jpg" />
     <Content Include="Uploads\_thumbs\Images\4f3c0d387d188546dc09.jpg" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

@@ -42,7 +42,7 @@
                                 <td>@string.Format("{0:#,0}",item.Price)</td>
                                 <td>@item.PromotionPrice</td>
                                 <td>@item.CreatedDate.Value.ToString("dd/MM/yyyy")</td>
-                                <td><a href="#" data-id="@item.ID" id="btnImages">Quản lý ảnh..</a></td>
+                                <td><a href="#" data-id="@item.ID" class="btnImages">Quản lý ảnh..</a></td>
                                 <td><a class="btn btn-primary" href="@Url.Action("Edit", "Product", new { id= item.ID})">Sửa</a>-<a class="btn btn-primary" href="@Url.Action("Delete", "Product", new { id = item.ID })">Xóa</a></td>
                             </tr>
                         }

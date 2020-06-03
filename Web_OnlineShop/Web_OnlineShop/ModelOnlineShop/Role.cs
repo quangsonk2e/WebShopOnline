@@ -6,10 +6,10 @@ namespace Web_OnlineShop.ModelOnlineShop
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("UserGroup")]
-    public partial class UserGroup
+    [Table("Role")]
+    public partial class Role
     {
-        [StringLength(20)]
+        [StringLength(50)]
         public string ID { get; set; }
 
         [StringLength(50)]

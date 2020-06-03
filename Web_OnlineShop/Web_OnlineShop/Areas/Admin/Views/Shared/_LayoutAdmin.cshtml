@@ -90,8 +90,9 @@
             //document.getElementById('imageList').value = fileUrl;
            
         }
-        $('#btnImages').off('click').on('click', function (e) {
+        $('.btnImages').off('click').on('click', function (e) {
             e.preventDefault();
+            $('#imageList').html('');
             $('#exampleModal').modal('show');
             var id = $(this).data('id') ;
             $('#idProduct').val($(this).data('id'));

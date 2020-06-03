@@ -9,5 +9,7 @@ namespace Web_OnlineShop.DAO_OnlineShop
     {
         public const int pageSize = 10;
         public const string USERSESSION = "USERSESSION";
+        public const string CREDENTIAL_SESSION = "CREDENTIAL_SESSION";
+        public const string ADMIN_GROUP = "ADMIN";
     }
 }

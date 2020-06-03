@@ -17,17 +17,19 @@ namespace Web_OnlineShop.ModelOnlineShop
         public virtual DbSet<Contact> Contacts { get; set; }
         public virtual DbSet<Content> Contents { get; set; }
         public virtual DbSet<ContentTag> ContentTags { get; set; }
+        public virtual DbSet<Credential> Credentials { get; set; }
         public virtual DbSet<Feedback> Feedbacks { get; set; }
         public virtual DbSet<Footer> Footers { get; set; }
         public virtual DbSet<Menu> Menus { get; set; }
         public virtual DbSet<MenuType> MenuTypes { get; set; }
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<ProductCategory> ProductCategories { get; set; }
+        public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<Slide> Slides { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<SystemConfig> SystemConfigs { get; set; }
         public virtual DbSet<Tag> Tags { get; set; }
         public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<UserGroup> UserGroups { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -67,6 +69,14 @@ namespace Web_OnlineShop.ModelOnlineShop
                 .Property(e => e.TagID)
                 .IsUnicode(false);
 
+            modelBuilder.Entity<Credential>()
+                .Property(e => e.UserGroupID)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Credential>()
+                .Property(e => e.RoleID)
+                .IsUnicode(false);
+
             modelBuilder.Entity<Product>()
                 .Property(e => e.Code)
                 .IsUnicode(false);
@@ -99,6 +109,10 @@ namespace Web_OnlineShop.ModelOnlineShop
                 .Property(e => e.ModifieldBy)
                 .IsUnicode(false);
 
+            modelBuilder.Entity<Role>()
+                .Property(e => e.ID)
+                .IsUnicode(false);
+
             modelBuilder.Entity<Slide>()
                 .Property(e => e.CreateBy)
                 .IsUnicode(false);
@@ -116,11 +130,23 @@ namespace Web_OnlineShop.ModelOnlineShop
                 .IsUnicode(false);
 
             modelBuilder.Entity<User>()
+                .Property(e => e.Password)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<User>()
+                .Property(e => e.GroupID)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<User>()
                 .Property(e => e.CreateBy)
                 .IsUnicode(false);
 
             modelBuilder.Entity<User>()
                 .Property(e => e.ModifieldBy)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<UserGroup>()
+                .Property(e => e.ID)
                 .IsUnicode(false);
         }
     }
