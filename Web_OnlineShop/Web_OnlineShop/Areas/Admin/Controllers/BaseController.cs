@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Web_OnlineShop.Areas.Admin.Models;
+
 using Web_OnlineShop.DAO_OnlineShop;
 
 namespace Web_OnlineShop.Areas.Admin.Controllers
