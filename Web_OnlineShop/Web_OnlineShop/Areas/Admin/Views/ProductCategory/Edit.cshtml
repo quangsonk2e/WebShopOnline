@@ -43,7 +43,7 @@
                     <div class="form-group row">
                         @Html.LabelFor(model => model.ParentID, new { @class = "control-label col-md-2" })
                         <div class="col-md-10">
-                            @Html.TextBoxFor(model => model.ParentID, new { @class = "form-control" })
+                            @Html.DropDownListFor(model => model.ParentID, null, "Gốc", new { @class = "form-control" })
                             @Html.ValidationMessageFor(model => model.ParentID)
                         </div>
                     </div>
@@ -115,7 +115,7 @@
                     <div class="form-group row">
                         @Html.LabelFor(model => model.Status, new { @class = "control-label col-md-2" })
                         <div class="col-md-10">
-                            @Html.TextBoxFor(model => model.Status, new { @class = "form-control" })
+                            @Html.EditorFor(model => model.Status, new { @class = "form-control" })
                             @Html.ValidationMessageFor(model => model.Status)
                         </div>
                     </div>
@@ -123,7 +123,7 @@
                     <div class="form-group row">
                         @Html.LabelFor(model => model.ShowOnHome, new { @class = "control-label col-md-2" })
                         <div class="col-md-10">
-                            @Html.TextBoxFor(model => model.ShowOnHome, new { @class = "form-control" })
+                            @Html.EditorFor(model => model.ShowOnHome, new { @class = "form-control" })
                             @Html.ValidationMessageFor(model => model.ShowOnHome)
                         </div>
                     </div>
