@@ -8,14 +8,14 @@ using Web_OnlineShop.ModelOnlineShop;
 
 namespace Web_OnlineShop.Areas.Admin.Controllers
 {
-    public class FooterController : Controller
+    public class ProductCategoryController : Controller
     {
         //
-        // GET: /Admin/Footer/
+        // GET: /Admin/ProductCategory/
         public ActionResult Index()
         {
-            var footers = new FooterDao().getAll();
-            return View(footers);
+            var productCategorys = new ProductCategoryDao().getAll();
+            return View(productCategorys);
         }
         [HttpGet]
         public ActionResult Create()
@@ -23,30 +23,35 @@ namespace Web_OnlineShop.Areas.Admin.Controllers
             return View();
         }
         [HttpPost, ValidateInput(false)]
-        public ActionResult Create(Footer footer)
+        public ActionResult Create(ProductCategory ProductCategory)
         {
-            new FooterDao().insert(footer);
+            new ProductCategoryDao().insert(ProductCategory);
             return RedirectToAction("Index");
         }
         public ActionResult Delete(int id)
         {
-            new FooterDao().delete(id);
+            new ProductCategoryDao().delete(id);
             return RedirectToAction("Index");
         }
         public ActionResult Edit(int id)
         {
-            var Model = new FooterDao().getById(id);
+            var Model = new ProductCategoryDao().getById(id);
             return View(Model);
         }
         [HttpPost, ValidateInput(false)]
-        public ActionResult Edit(Footer footer)
+        public ActionResult Edit(ProductCategory ProductCategory)
         {
             if (ModelState.IsValid)
             {
 
-                long id = new FooterDao().update(footer);
+                long id = new ProductCategoryDao().update(ProductCategory);
             }
             return RedirectToAction("Index");
         }
+        public void setCategoryParent(long? selectedID = null)
+        {
+            ViewBag.CategoryID = new SelectList(new ProductCategoryDao().getAllParent(), "ID", "Name", selectedID);
+        }
+
 	}
 }

@@ -17,6 +17,10 @@ namespace Web_OnlineShop.DAO_OnlineShop
         {
             return db.ProductCategories.ToList();
         }
+        public List<ProductCategory> getAllParent(long? idParent=0)
+        {
+            return db.ProductCategories.Where(x => x.ParentID == idParent).ToList();
+        }
         public int CountAll()
         {
             return db.ProductCategories.Count();
@@ -39,7 +43,15 @@ namespace Web_OnlineShop.DAO_OnlineShop
         public long update(ProductCategory productCategory)
         {
             var pc = db.ProductCategories.Find(productCategory.ID);
-            //pc.Name = user.Name;
+            pc.Name = productCategory.Name;
+            pc.MetaDescriptions = productCategory.MetaDescriptions;
+            pc.MetaKeywords = productCategory.MetaKeywords;
+            pc.MetaTitle = productCategory.MetaTitle;
+            pc.ParentID = productCategory.ParentID;
+            pc.SeoTitle = productCategory.SeoTitle;
+            pc.ShowOnHome = productCategory.ShowOnHome;
+            pc.Status = productCategory.Status;
+            pc.ModifieldDate = DateTime.Now;
             //us.UserName = user.UserName;
             //us.ModifieldDate = DateTime.Now;
             db.SaveChanges();
