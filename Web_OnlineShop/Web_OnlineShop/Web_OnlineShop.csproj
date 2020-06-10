@@ -188,7 +188,9 @@
     <Compile Include="Areas\Admin\Controllers\UserController.cs" />
     <Compile Include="Common\HasCredentialAttribute.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\FooterController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="DAO_OnlineShop\AboutDao.cs" />
     <Compile Include="DAO_OnlineShop\CategoryDao.cs" />
     <Compile Include="DAO_OnlineShop\ContactDao.cs" />
@@ -3193,6 +3195,12 @@
     <Content Include="assets\truoc\fonts\FontAwesome.otf" />
     <Content Include="assets\truoc\fonts\glyphicons-halflings-regular.woff" />
     <None Include="Project_Readme.html" />
+    <Content Include="Views\Home\MenuCatagory.cshtml" />
+    <Content Include="Views\Product\productByCategory.cshtml" />
+    <Content Include="Views\Product\Top4Category.cshtml" />
+    <Content Include="Views\Product\recommendProduct.cshtml" />
+    <Content Include="Views\Shared\footer.cshtml" />
+    <Content Include="Views\Footer\footer.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

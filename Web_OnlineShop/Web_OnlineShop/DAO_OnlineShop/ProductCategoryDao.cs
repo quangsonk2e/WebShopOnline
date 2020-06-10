@@ -19,8 +19,10 @@ namespace Web_OnlineShop.DAO_OnlineShop
         }
         public List<ProductCategory> getAllParent(long? idParent=0)
         {
+            if (idParent == -1) return db.ProductCategories.Where(x => x.ParentID != 0).ToList();
             return db.ProductCategories.Where(x => x.ParentID == idParent).ToList();
         }
+       
         public int CountAll()
         {
             return db.ProductCategories.Count();

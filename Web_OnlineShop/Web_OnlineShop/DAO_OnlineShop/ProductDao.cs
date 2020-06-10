@@ -21,6 +21,18 @@ namespace Web_OnlineShop.DAO_OnlineShop
         {
             return db.Products.Count();
         }
+        public IEnumerable<Product> Top4Category(int top, long categoryID)
+        {
+            return db.Products.Where(x => x.CategoryID == categoryID).Skip(0).Take(4).ToList();
+        }
+        public IEnumerable<Product> getProductCategory(long categoryID = 0)
+        {
+            return db.Products.Where(x => x.CategoryID == categoryID).ToList();
+        }
+        public IEnumerable<Product> getProductCategoryPage(int pageNumber = 1, long categoryID=0)
+        {
+            return db.Products.Where(x => x.CategoryID == categoryID).OrderBy(x=>x.CreatedDate).ToPagedList(pageNumber, DEFINE.pageSize);
+        }
 
         public IEnumerable<Product> getProductPage(int pageNumber = 1)
         {
