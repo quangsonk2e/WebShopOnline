@@ -31,7 +31,7 @@ namespace Web_OnlineShop.DAO_OnlineShop
         }
         public IEnumerable<Product> getProductCategoryPage(int pageNumber = 1, long categoryID=0)
         {
-            return db.Products.Where(x => x.CategoryID == categoryID).OrderBy(x=>x.CreatedDate).ToPagedList(pageNumber, DEFINE.pageSize);
+            return db.Products.Where(x => x.CategoryID == categoryID).OrderBy(x=>x.CreatedDate).ToPagedList(pageNumber, DEFINE.pageSizeProductHome);
         }
 
         public IEnumerable<Product> getProductPage(int pageNumber = 1)

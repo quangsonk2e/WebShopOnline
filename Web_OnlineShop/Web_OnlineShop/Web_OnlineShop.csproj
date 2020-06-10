@@ -190,6 +190,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\FooterController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="DAO_OnlineShop\AboutDao.cs" />
     <Compile Include="DAO_OnlineShop\CategoryDao.cs" />
@@ -3201,6 +3202,8 @@
     <Content Include="Views\Product\recommendProduct.cshtml" />
     <Content Include="Views\Shared\footer.cshtml" />
     <Content Include="Views\Footer\footer.cshtml" />
+    <Content Include="Views\Menu\mainMenu.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

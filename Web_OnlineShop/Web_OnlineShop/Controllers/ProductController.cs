@@ -11,10 +11,13 @@ namespace Web_OnlineShop.Controllers
     {
         //
         // GET: /Product/
-        public ActionResult Index()
+        public ActionResult Index(long category=1, int page=1)
         {
-            return View();
+            var lsProduct = new ProductDao().getProductCategoryPage(page, category);
+            ViewBag.category = category;
+            return View(lsProduct);
         }
+        
         public ActionResult productByCategory(long id=0){
             var lsProduct = new ProductDao().getProductCategory(id);
             return PartialView(lsProduct);
