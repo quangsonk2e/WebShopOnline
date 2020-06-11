@@ -19,6 +19,12 @@ namespace Web_OnlineShop
                defaults: new { controller = "Product", action = "Index", id = UrlParameter.Optional },
                namespaces: new[] { "Web_OnlineShop.Controllers" }
                );
+            routes.MapRoute(
+             name: "them hang",
+             url: "them-hang-{productId}-{quanttity}",
+             defaults: new { controller = "Cart", action = "AddItem", id = UrlParameter.Optional },
+             namespaces: new[] { "Web_OnlineShop.Controllers" }
+             );
 
             routes.MapRoute(
                 name: "Default",

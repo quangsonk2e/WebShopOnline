@@ -188,6 +188,7 @@
     <Compile Include="Areas\Admin\Controllers\UserController.cs" />
     <Compile Include="Common\HasCredentialAttribute.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CartController.cs" />
     <Compile Include="Controllers\FooterController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MenuController.cs" />
@@ -222,6 +223,8 @@
     <Compile Include="ModelOnlineShop\Footer.cs" />
     <Compile Include="ModelOnlineShop\Menu.cs" />
     <Compile Include="ModelOnlineShop\MenuType.cs" />
+    <Compile Include="ModelOnlineShop\Order.cs" />
+    <Compile Include="ModelOnlineShop\OrderDetail.cs" />
     <Compile Include="ModelOnlineShop\Shop.cs" />
     <Compile Include="ModelOnlineShop\Product.cs" />
     <Compile Include="ModelOnlineShop\ProductCategory.cs" />
@@ -232,6 +235,7 @@
     <Compile Include="ModelOnlineShop\User.cs" />
     <Compile Include="ModelOnlineShop\UserGroup.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -1361,6 +1365,7 @@
     <Content Include="assets\truoc\images\shop\product8.jpg" />
     <Content Include="assets\truoc\images\shop\product9.jpg" />
     <Content Include="assets\truoc\js\bootstrap.min.js" />
+    <Content Include="assets\truoc\js\CartController.js" />
     <Content Include="assets\truoc\js\contact.js" />
     <Content Include="assets\truoc\js\gmaps.js" />
     <Content Include="assets\truoc\js\html5shiv.js" />
@@ -3204,6 +3209,7 @@
     <Content Include="Views\Footer\footer.cshtml" />
     <Content Include="Views\Menu\mainMenu.cshtml" />
     <Content Include="Views\Product\Index.cshtml" />
+    <Content Include="Views\Cart\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

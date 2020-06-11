@@ -295,12 +295,7 @@ D:\code\Web MVC\shopOnline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\Micro
 D:\code\Web MVC\shopOnline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\code\Web MVC\shopOnline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\obj\Debug\Web_OnlineShop.dll
 D:\code\Web MVC\shopOnline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\obj\Debug\Web_OnlineShop.pdb
-D:\code\Web MVC\shopOnline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder.pdb
-D:\code\Web MVC\shopOnline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder_FileEditor.pdb
-D:\code\Web MVC\shopOnline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder_ImageResize.pdb
-D:\code\Web MVC\shopOnline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder_Watermark.pdb
 D:\code\webMVC\Shoponline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\obj\Debug\Web_OnlineShop.csprojResolveAssemblyReference.cache
-D:\code\Web MVC\shopOnline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\obj\Debug\Web_OnlineShop.csprojResolveAssemblyReference.cache
 G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\obj\Debug\Web_OnlineShop.csprojResolveAssemblyReference.cache
 G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\obj\Debug\Web_OnlineShop.dll
 G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\obj\Debug\Web_OnlineShop.pdb
@@ -368,3 +363,4 @@ G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder.pdb
 G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder_FileEditor.pdb
 G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder_ImageResize.pdb
 G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder_Watermark.pdb
+D:\code\Web MVC\shopOnline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\obj\Debug\Web_OnlineShop.csprojResolveAssemblyReference.cache

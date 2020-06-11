@@ -28,3 +28,17 @@ $(document).ready(function(){
 		});
 	});
 });
+
+        $('.add-to-cart').on('click', function (e) {
+            alert('dsdsd');
+            e.preventdefault();
+            var url = $(this).attr('href');
+            $.ajax({
+                url: url,
+                type: 'GET',
+                success: function (result) {
+                   
+                }
+            });
+        });
+
