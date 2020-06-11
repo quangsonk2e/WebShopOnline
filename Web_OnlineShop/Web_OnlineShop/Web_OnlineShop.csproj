@@ -187,6 +187,7 @@
     <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
     <Compile Include="Areas\Admin\Controllers\UserController.cs" />
     <Compile Include="Common\HasCredentialAttribute.cs" />
+    <Compile Include="Common\MailHelper.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CartController.cs" />
     <Compile Include="Controllers\FooterController.cs" />
@@ -1297,6 +1298,7 @@
     <Content Include="assets\js\main.js" />
     <Content Include="assets\js\ruang-admin.js" />
     <Content Include="assets\js\ruang-admin.min.js" />
+    <Content Include="assets\template\newOrder.html" />
     <Content Include="assets\truoc\css\animate.css" />
     <Content Include="assets\truoc\css\bootstrap.min.css" />
     <Content Include="assets\truoc\css\font-awesome.min.css" />

@@ -30,12 +30,12 @@ $(document).ready(function(){
 });
 
         $('.add-to-cart').on('click', function (e) {
-            alert('dsdsd');
-            e.preventdefault();
-            var url = $(this).attr('href');
+            e.preventDefault();
+            
             $.ajax({
-                url: url,
+                url: $(this).attr('href'),
                 type: 'GET',
+                contentType:'text',
                 success: function (result) {
                    
                 }

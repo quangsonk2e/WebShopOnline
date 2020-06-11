@@ -296,7 +296,6 @@ D:\code\Web MVC\shopOnline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\Micro
 D:\code\Web MVC\shopOnline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\obj\Debug\Web_OnlineShop.dll
 D:\code\Web MVC\shopOnline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\obj\Debug\Web_OnlineShop.pdb
 D:\code\webMVC\Shoponline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\obj\Debug\Web_OnlineShop.csprojResolveAssemblyReference.cache
-G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\obj\Debug\Web_OnlineShop.csprojResolveAssemblyReference.cache
 G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\obj\Debug\Web_OnlineShop.dll
 G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\obj\Debug\Web_OnlineShop.pdb
 G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\Web_OnlineShop.dll.config
