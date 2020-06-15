@@ -1,4 +1,4 @@
-/*price range*/
+﻿/*price range*/
 
  $('#sl2').slider();
 
@@ -37,7 +37,7 @@ $(document).ready(function(){
                 type: 'GET',
                 contentType:'text',
                 success: function (result) {
-                   
+                    alert('Đã thêm vào giỏ hàng thành công!');
                 }
             });
         });
