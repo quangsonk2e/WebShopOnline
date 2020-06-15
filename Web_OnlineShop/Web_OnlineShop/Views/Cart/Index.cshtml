@@ -6,7 +6,7 @@
 }
 @section jsFooter{
     
-<script src="/>assets/truoc/js/CartController.js"></script>">
+<script src="/assets/truoc/js/CartController.js"></script>">
 
        }
 <section id="cart_items">
@@ -21,11 +21,11 @@
             <table class="table table-condensed">
                 <thead>
                     <tr class="cart_menu">
-                        <td class="image">Item</td>
+                        <td class="image">Sản phẩm</td>
                         <td class="description"></td>
-                        <td class="price">Price</td>
-                        <td class="quantity">Quantity</td>
-                        <td class="total">Total</td>
+                        <td class="price">Giá</td>
+                        <td class="quantity">Số lượng</td>
+                        <td class="total">Tổng</td>
                         <td></td>
                     </tr>
                 </thead>
@@ -34,11 +34,11 @@
                     {
                          <tr>
                         <td class="cart_product">
-                            <a href=""><img src="@item.product.Image" alt=""></a>
+                            <a href=""><img src="@item.product.Image" alt="" width="100"></a>
                         </td>
                         <td class="cart_description">
                             <h4><a href="">@item.product.Name</a></h4>
-                            <p>Web ID: @item.product.Code</p>
+                            <p>Mã SP: @item.product.Code</p>
                         </td>
                         <td class="cart_price">
                             <p>@string.Format("{0:#,0}",item.product.Price.GetValueOrDefault(0))</p>
@@ -75,8 +75,8 @@
             @*<a class="btn btn-primary" href="">Thanh toán</a>*@
             <a class="btn btn-primary" id="btnContinue" href="@Url.Action("Index","Home")">Tiếp tục mua</a>
             <a class="btn btn-primary" id="btnUpdate" href="@Url.Action("Index","Home")">Cập nhật giỏ hàng</a>
-            <a class="btn btn-primary" id="btnDeleteAll" href="@Url.Action("Index","Home")">Xoá giỏ hàng</a>
-            <a class="btn btn-primary" id="btnPayment" href="@Url.Action("Index","Home")">Thanh toán</a>
+            <a class="btn btn-primary" id="btnDeleteAll" onclick="return (confirm('Bạn chắc chắn muốn xóa giỏ hàng???'))"    href="@Url.Action("DeleteAll","Cart")">Xoá giỏ hàng</a>
+            <a class="btn btn-primary" id="btnPayment" href="@Url.Action("Checkout","Cart")">Thanh toán</a>
 
         </div>
     </div>

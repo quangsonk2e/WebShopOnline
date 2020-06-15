@@ -363,3 +363,4 @@ G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder_FileEdito
 G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder_ImageResize.pdb
 G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder_Watermark.pdb
 D:\code\Web MVC\shopOnline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\obj\Debug\Web_OnlineShop.csprojResolveAssemblyReference.cache
+G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\obj\Debug\Web_OnlineShop.csprojResolveAssemblyReference.cache
