@@ -16,9 +16,10 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
-    <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
+    <IISExpressSSLPort>
+    </IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
     <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -183,6 +184,7 @@
     <Compile Include="Areas\Admin\Controllers\FooterController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
+    <Compile Include="Areas\Admin\Controllers\MenuController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductCategoryController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
     <Compile Include="Areas\Admin\Controllers\UserController.cs" />
@@ -3204,6 +3206,9 @@
     <Content Include="assets\truoc\fonts\fontawesome-webfont.woff" />
     <Content Include="assets\truoc\fonts\FontAwesome.otf" />
     <Content Include="assets\truoc\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Areas\Admin\Views\Menu\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Menu\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Menu\Create.cshtml" />
     <None Include="Project_Readme.html" />
     <Content Include="Views\Home\MenuCatagory.cshtml" />
     <Content Include="Views\Product\productByCategory.cshtml" />

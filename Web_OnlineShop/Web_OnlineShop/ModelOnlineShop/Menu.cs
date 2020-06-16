@@ -11,7 +11,7 @@ namespace Web_OnlineShop.ModelOnlineShop
     {
         public int ID { get; set; }
 
-        [StringLength(250)]
+        [StringLength(250)]        
         public string Text { get; set; }
 
         [StringLength(250)]

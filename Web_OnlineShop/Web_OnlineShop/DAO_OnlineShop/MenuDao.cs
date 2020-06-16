@@ -46,9 +46,13 @@ namespace Web_OnlineShop.DAO_OnlineShop
         }
         public long update(Menu Menu)
         {
-            var ft = db.Menus.Find(Menu.ID);
-
-            ft.Status = Menu.Status;
+            var mn= db.Menus.Find(Menu.ID);
+            mn.DisplayOrder = Menu.DisplayOrder;
+            mn.Link = Menu.Link;
+            mn.Target = Menu.Target;
+            mn.Text = Menu.Text;
+            mn.TypeID = Menu.TypeID;
+            mn.Status = Menu.Status;
           
             db.SaveChanges();
             return 1;

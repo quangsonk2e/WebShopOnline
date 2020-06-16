@@ -36,15 +36,15 @@
                     {
                         <tr>
                             <td>
-                                @Html.DisplayFor(modelItem => item.Content)
+                                @Html.Raw(item.Content)
                             </td>
                             <td>
-                                @Html.DisplayFor(modelItem => item.Status)
+                                @Html.EditorFor(modelItem => item.Status)
                             </td>
                             <td>
-                                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                                @Html.ActionLink("Details", "Details", new { id = item.ID }) |
-                                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                                @Html.ActionLink("Sửa", "Edit", new { id = item.ID }) |
+                              
+                                @Html.ActionLink("Xoá", "Delete", new { id = item.ID })
                             </td>
                         </tr>
                     }

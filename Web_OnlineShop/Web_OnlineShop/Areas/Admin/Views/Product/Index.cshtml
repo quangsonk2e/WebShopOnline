@@ -5,6 +5,7 @@
 @{
     ViewBag.Title = "Index";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+    var i = 1;
 }
 
 <div class="container">
@@ -18,14 +19,15 @@
         <div class="card-body">
             <div class="text-right" style="margin-bottom:10px"><a class="btn btn-primary" href="@Url.Action("Create","Product")">Thêm</a></div>
             <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                    <thead>
+                <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
+                    <thead class="thead-light">
                         <tr>
+                            <th>STT</th>
                             <th>Tên</th>
                             <th>Mã</th>
-                            <th>Miêu tả</th>
-                            <th>Giá</th>
-                            <th>Giá khuyến mại</th>
+                           
+                            <th>Giá (&#8363;)</th>
+                            <th>Giá KM (&#8363;)</th>
                             <th>Ngày tạo</th>
                             <th>Ảnh</th>
                             <th>Thao tác</th>
@@ -36,15 +38,17 @@
                         @foreach (var item in Model)
                         {
                             <tr>
+                                <td>@i</td>
                                 <td>@item.Name</td>
                                 <td>@item.Code</td>
-                                <td>@item.Description</td>
-                                <td>item.Price)</td>
-                                <td>@item.PromotionPrice</td>
+                                
+                                <td>@item.Price.GetValueOrDefault(0).ToString("N0")</td>
+                                <td>@item.PromotionPrice.GetValueOrDefault(0).ToString("N0")</td>
                                 <td>@item.CreatedDate.Value.ToString("dd/MM/yyyy")</td>
                                 <td><a href="#" data-id="@item.ID" class="btnImages">Quản lý ảnh..</a></td>
-                                <td><a class="btn btn-primary" href="@Url.Action("Edit", "Product", new { id= item.ID})">Sửa</a>-<a class="btn btn-primary" href="@Url.Action("Delete", "Product", new { id = item.ID })">Xóa</a></td>
+                                <td><a  href="@Url.Action("Edit", "Product", new { id= item.ID})">Sửa</a>-<a  href="@Url.Action("Delete", "Product", new { id = item.ID })">Xóa</a></td>
                             </tr>
+                            i++;
                         }
 
                     </tbody>
