@@ -8,15 +8,16 @@ using Web_OnlineShop.ModelOnlineShop;
 
 namespace Web_OnlineShop.Areas.Admin.Controllers
 {
-    public class AboutController : Controller
+    public class CategoryController : Controller
     {
         //
+        // GET: /Admin/Category/
         // GET: /Admin/About/
         [HttpGet]
         public ActionResult Index()
         {
 
-            return View(new AboutDao().getAll());
+            return View(new CategoryDao().getAll());
         }
         //create
         public ActionResult Create()
@@ -24,10 +25,11 @@ namespace Web_OnlineShop.Areas.Admin.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Create(About about)
+        public ActionResult Create(Category Category)
         {
-            if (ModelState.IsValid){
-                new AboutDao().insert(about);
+            if (ModelState.IsValid)
+            {
+                new CategoryDao().insert(Category);
             }
             return RedirectToAction("Index");
         }
@@ -36,19 +38,19 @@ namespace Web_OnlineShop.Areas.Admin.Controllers
         {
             return View();
         }
-         [HttpPost]
-        public ActionResult Edit(About about)
+        [HttpPost]
+        public ActionResult Edit(Category Category)
         {
             if (ModelState.IsValid)
             {
-                new AboutDao().update(about);
+                new CategoryDao().update(Category);
             }
             return RedirectToAction("Index");
         }
         //Edit
-        public ActionResult Delete(int ID)
+        public ActionResult Delete(long ID)
         {
-            new AboutDao().delete(ID);
+            new CategoryDao().delete(ID);
             return RedirectToAction("Index");
         }
 	}

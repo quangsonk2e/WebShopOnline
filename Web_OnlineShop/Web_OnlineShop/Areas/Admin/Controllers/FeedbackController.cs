@@ -8,15 +8,16 @@ using Web_OnlineShop.ModelOnlineShop;
 
 namespace Web_OnlineShop.Areas.Admin.Controllers
 {
-    public class AboutController : Controller
+    public class FeedbackController : Controller
     {
         //
-        // GET: /Admin/About/
+        // GET: /Admin/Feedback/
+        // GET: /Admin/Feedback/
         [HttpGet]
         public ActionResult Index()
         {
 
-            return View(new AboutDao().getAll());
+            return View(new FeedbackDao().getAll());
         }
         //create
         public ActionResult Create()
@@ -24,10 +25,11 @@ namespace Web_OnlineShop.Areas.Admin.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Create(About about)
+        public ActionResult Create(Feedback Feedback)
         {
-            if (ModelState.IsValid){
-                new AboutDao().insert(about);
+            if (ModelState.IsValid)
+            {
+                new FeedbackDao().insert(Feedback);
             }
             return RedirectToAction("Index");
         }
@@ -36,19 +38,19 @@ namespace Web_OnlineShop.Areas.Admin.Controllers
         {
             return View();
         }
-         [HttpPost]
-        public ActionResult Edit(About about)
+        [HttpPost]
+        public ActionResult Edit(Feedback Feedback)
         {
             if (ModelState.IsValid)
             {
-                new AboutDao().update(about);
+                new FeedbackDao().update(Feedback);
             }
             return RedirectToAction("Index");
         }
         //Edit
         public ActionResult Delete(int ID)
         {
-            new AboutDao().delete(ID);
+            new FeedbackDao().delete(ID);
             return RedirectToAction("Index");
         }
 	}

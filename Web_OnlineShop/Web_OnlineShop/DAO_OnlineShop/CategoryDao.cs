@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Web_OnlineShop.ModelOnlineShop;
-
+using PagedList;
 namespace Web_OnlineShop.DAO_OnlineShop
 {
     public class CategoryDao
@@ -59,7 +59,7 @@ namespace Web_OnlineShop.DAO_OnlineShop
             return 1;
         }
         
-        public int delete(int id)
+        public int delete(long id)
         {
 
             db.Categories.Remove(db.Categories.Find(id));
