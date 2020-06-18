@@ -22,97 +22,68 @@
                     <hr />
                     @Html.ValidationSummary(true)
 
-                    <div class="form-group">
+                    <div class="form-group row">
                         @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
                         <div class="col-md-10">
-                            @Html.EditorFor(model => model.Name)
+                            @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
                             @Html.ValidationMessageFor(model => model.Name)
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group row">
                         @Html.LabelFor(model => model.MetaTitle, new { @class = "control-label col-md-2" })
                         <div class="col-md-10">
-                            @Html.EditorFor(model => model.MetaTitle)
+                            @Html.TextBoxFor(model => model.MetaTitle, new { @class = "form-control" })
                             @Html.ValidationMessageFor(model => model.MetaTitle)
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group row">
                         @Html.LabelFor(model => model.Description, new { @class = "control-label col-md-2" })
                         <div class="col-md-10">
-                            @Html.EditorFor(model => model.Description)
+                            @Html.TextBoxFor(model => model.Description, new { @class = "form-control" })
                             @Html.ValidationMessageFor(model => model.Description)
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group row">
                         @Html.LabelFor(model => model.Detail, new { @class = "control-label col-md-2" })
                         <div class="col-md-10">
-                            @Html.EditorFor(model => model.Detail)
+                            @Html.TextBoxFor(model => model.Detail, new { @class = "form-control" })
                             @Html.ValidationMessageFor(model => model.Detail)
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.CreatedDate, new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.EditorFor(model => model.CreatedDate)
-                            @Html.ValidationMessageFor(model => model.CreatedDate)
-                        </div>
-                    </div>
+                    
 
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.CreateBy, new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.EditorFor(model => model.CreateBy)
-                            @Html.ValidationMessageFor(model => model.CreateBy)
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.ModifieldDate, new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.EditorFor(model => model.ModifieldDate)
-                            @Html.ValidationMessageFor(model => model.ModifieldDate)
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        @Html.LabelFor(model => model.ModifieldBy, new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.EditorFor(model => model.ModifieldBy)
-                            @Html.ValidationMessageFor(model => model.ModifieldBy)
-                        </div>
-                    </div>
-
-                    <div class="form-group">
+                    <div class="form-group row">
                         @Html.LabelFor(model => model.MetaKeywords, new { @class = "control-label col-md-2" })
                         <div class="col-md-10">
-                            @Html.EditorFor(model => model.MetaKeywords)
+                            @Html.TextBoxFor(model => model.MetaKeywords, new { @class = "form-control" })
                             @Html.ValidationMessageFor(model => model.MetaKeywords)
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group row">
                         @Html.LabelFor(model => model.MetaDescriptions, new { @class = "control-label col-md-2" })
                         <div class="col-md-10">
-                            @Html.EditorFor(model => model.MetaDescriptions)
+                            @Html.TextBoxFor(model => model.MetaDescriptions, new { @class = "form-control" })
                             @Html.ValidationMessageFor(model => model.MetaDescriptions)
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group row">
                         @Html.LabelFor(model => model.Status, new { @class = "control-label col-md-2" })
                         <div class="col-md-10">
-                            @Html.EditorFor(model => model.Status)
+                            @Html.TextBoxFor(model => model.Status, new { @class = "form-control" })
                             @Html.ValidationMessageFor(model => model.Status)
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <div class="col-md-offset-2 col-md-10">
-                            <input type="submit" value="Create" class="btn btn-default" />
+                    <div class="form-group row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-10">
+                            <a class="btn btn-primary" href="@Url.Action("Index","About")">Quay về</a>    <input type="submit" value="Lưu" class="btn btn-primary" style="float:right" />
                         </div>
                     </div>
                 </div>
@@ -120,6 +91,4 @@
             </div>
         </div>
     </div>
-            <div>
-                @Html.ActionLink("Back to List", "Index")
-            </div>
+           

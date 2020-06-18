@@ -355,12 +355,4 @@ G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\Microsoft.Owin.Sec
 G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\Microsoft.Owin.Security.Twitter.xml
 G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\code\Web MVC\shopOnline\WebShopOnline\Web_OnlineShop\Web_OnlineShop\obj\Debug\Web_OnlineShop.csprojResolveAssemblyReference.cache
-G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder.dll
-G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder_FileEditor.dll
-G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder_ImageResize.dll
-G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder_Watermark.dll
-G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder.pdb
-G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder_FileEditor.pdb
-G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder_ImageResize.pdb
-G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\bin\CKFinder_Watermark.pdb
 G:\web\dotnet\WebShopOnline\Web_OnlineShop\Web_OnlineShop\obj\Debug\Web_OnlineShop.csprojResolveAssemblyReference.cache

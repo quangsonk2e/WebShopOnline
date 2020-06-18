@@ -22,34 +22,35 @@
                         @Html.ActionLink("Create New", "Create")
                     </p>*@
                 <table class="table">
-                    <tr>
-                        <th>
-                            @Html.DisplayNameFor(model => model.Content)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.Status)
-                        </th>
-                        <th></th>
-                    </tr>
-
-                    @foreach (var item in Model)
-                    {
+                    <thead class="thead-light">
                         <tr>
-                            <td>
-                                @Html.Raw(item.Content)
-                            </td>
-                            <td>
-                                @Html.EditorFor(modelItem => item.Status)
-                            </td>
-                            <td>
-                                @Html.ActionLink("Sửa", "Edit", new { id = item.ID }) |
-                              
-                                @Html.ActionLink("Xoá", "Delete", new { id = item.ID })
-                            </td>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Content)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Status)
+                            </th>
+                            <th></th>
                         </tr>
-                    }
+                        </thead>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.Raw(item.Content)
+                                </td>
+                                <td>
+                                    @Html.EditorFor(modelItem => item.Status)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Sửa", "Edit", new { id = item.ID }) |
 
-                </table>
+                                    @Html.ActionLink("Xoá", "Delete", new { id = item.ID })
+                                </td>
+                            </tr>
+                        }
+
+</table>
             </div>
         </div>
     </div>

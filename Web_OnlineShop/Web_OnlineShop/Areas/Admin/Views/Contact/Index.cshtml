@@ -5,36 +5,48 @@
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>Index</h2>
+<div class="container">
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Content)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Status)
-        </th>
-        <th></th>
-    </tr>
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">Tables</h1>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Content)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Status)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
-        </td>
-    </tr>
-}
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <div class="text-right" style="margin-bottom:10px"><a class="btn btn-primary" href="@Url.Action("Create","Contact")">Thêm</a></div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Content)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Status)
+                            </th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Content)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Status)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                                    @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                                </td>
+                            </tr>
+                        }
 
 </table>
+            </div>
+        </div>
+    </div>
+</div>
