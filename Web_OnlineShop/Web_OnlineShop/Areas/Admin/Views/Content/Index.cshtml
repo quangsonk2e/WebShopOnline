@@ -22,15 +22,8 @@
                             <th>
                                 @Html.DisplayNameFor(model => model.Name)
                             </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.MetaTitle)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.Description)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.Image)
-                            </th>
+                            
+                           
                             <th>
                                 @Html.DisplayNameFor(model => model.CategoryID)
                             </th>
@@ -39,12 +32,7 @@
                             </th>
 
                             </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.MetaKeywords)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.MetaDescriptions)
-                            </th>
+                           
                             <th>
                                 @Html.DisplayNameFor(model => model.Status)
                             </th>
@@ -63,15 +51,9 @@
                                 <td>
                                     @Html.DisplayFor(modelItem => item.Name)
                                 </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.MetaTitle)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Description)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Image)
-                                </td>
+                                
+                               
+                                
                                 <td>
                                     @Html.DisplayFor(modelItem => item.CategoryID)
                                 </td>
@@ -79,12 +61,7 @@
                                     @Html.DisplayFor(modelItem => item.Detail)
                                 </td>
 
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.MetaKeywords)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.MetaDescriptions)
-                                </td>
+                               
                                 <td>
                                     @Html.DisplayFor(modelItem => item.Status)
                                 </td>
@@ -96,7 +73,7 @@
                                 </td>
                                 <td>
                                     @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                                    @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                               
                                     @Html.ActionLink("Delete", "Delete", new { id = item.ID })
                                 </td>
                             </tr>

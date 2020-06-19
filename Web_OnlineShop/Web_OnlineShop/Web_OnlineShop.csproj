@@ -41,16 +41,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CKFinder">
-      <HintPath>..\..\..\..\..\dl\ckfinder\bin\Debug\CKFinder.dll</HintPath>
+      <HintPath>..\..\..\CKFinder.dll</HintPath>
     </Reference>
     <Reference Include="CKFinder_FileEditor">
-      <HintPath>..\..\..\..\..\dl\ckfinder\bin\Debug\CKFinder_FileEditor.dll</HintPath>
+      <HintPath>..\..\..\CKFinder_FileEditor.dll</HintPath>
     </Reference>
     <Reference Include="CKFinder_ImageResize">
-      <HintPath>..\..\..\..\..\dl\ckfinder\bin\Debug\CKFinder_ImageResize.dll</HintPath>
+      <HintPath>..\..\..\CKFinder_ImageResize.dll</HintPath>
     </Reference>
     <Reference Include="CKFinder_Watermark">
-      <HintPath>..\..\..\..\..\dl\ckfinder\bin\Debug\CKFinder_Watermark.dll</HintPath>
+      <HintPath>..\..\..\CKFinder_Watermark.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="PagedList">

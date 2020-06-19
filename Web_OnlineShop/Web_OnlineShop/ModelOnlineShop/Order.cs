@@ -13,20 +13,24 @@
 
         public DateTime? CreatedDate { get; set; }
 
-
+        [Display(Name = "Mã Khách Hàng")]
         public long? CustomerID { get; set; }
 
 
         [StringLength(50)]
+        [Display(Name = "Người Khách")]
         public string ShipName { get; set; }
 
         [StringLength(50)]
+        [Display(Name = "Số điện thoại")]
         public string ShipMobile { get; set; }
         [StringLength(50)]
+        [Display(Name = "Địa chỉ")]
         public string ShipAddress { get; set; }
         [StringLength(50)]
+        [Display(Name = "Email")]
         public string ShipEmail { get; set; }
-
-        public bool? Status { get; set; }
+        [Display(Name = "Tình trạng")]
+        public bool Status { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-namespace Web_OnlineShop.ModelOnlineShop
+﻿namespace Web_OnlineShop.ModelOnlineShop
 {
     using System;
     using System.Collections.Generic;
@@ -12,14 +12,16 @@ namespace Web_OnlineShop.ModelOnlineShop
         public long ID { get; set; }
 
         [StringLength(250)]
+        [Display(Name = "Ảnh")]
         public string Image { get; set; }
-
+        [Display(Name = "Thứ tự hiển thị")]
         public int? DisplayOrder { get; set; }
 
         [StringLength(250)]
         public string Link { get; set; }
 
         [StringLength(250)]
+        [Display(Name = "Miêu tả")]
         public string Description { get; set; }
 
         public DateTime? CreatedDate { get; set; }
@@ -31,7 +33,7 @@ namespace Web_OnlineShop.ModelOnlineShop
 
         [StringLength(50)]
         public string ModifieldBy { get; set; }
-
-        public bool? Status { get; set; }
+        [Display(Name = "Tình trạng")]
+        public bool Status { get; set; }
     }
 }

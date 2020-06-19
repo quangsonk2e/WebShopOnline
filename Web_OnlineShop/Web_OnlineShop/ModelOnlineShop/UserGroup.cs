@@ -13,6 +13,7 @@ namespace Web_OnlineShop.ModelOnlineShop
         public string ID { get; set; }
 
         [StringLength(50)]
+        [Display(Name = "Tên nhóm")]
         public string Name { get; set; }
     }
 }

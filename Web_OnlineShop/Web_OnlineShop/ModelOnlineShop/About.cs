@@ -1,4 +1,4 @@
-namespace Web_OnlineShop.ModelOnlineShop
+﻿namespace Web_OnlineShop.ModelOnlineShop
 {
     using System;
     using System.Collections.Generic;
@@ -12,6 +12,7 @@ namespace Web_OnlineShop.ModelOnlineShop
         public long ID { get; set; }
 
         [StringLength(250)]
+        [Display(Name = "Tên")]
         public string Name { get; set; }
 
         [StringLength(250)]
@@ -21,6 +22,7 @@ namespace Web_OnlineShop.ModelOnlineShop
         public string Description { get; set; }
 
         [Column(TypeName = "ntext")]
+        [Display(Name = "Chi tiết")]
         public string Detail { get; set; }
 
         public DateTime? CreatedDate { get; set; }
@@ -39,6 +41,7 @@ namespace Web_OnlineShop.ModelOnlineShop
         [StringLength(250)]
         public string MetaDescriptions { get; set; }
 
-        public bool? Status { get; set; }
+         [Display(Name = "Tình trạng")]
+        public bool Status { get; set; }
     }
 }

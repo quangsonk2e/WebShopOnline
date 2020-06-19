@@ -8,7 +8,7 @@
 <div class="container">
     <div class="card mb-4">
         <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-            <h2 class="m-0 font-weight-bold text-primary">Tạo người dùng mới</h2>
+            <h2 class="m-0 font-weight-bold text-primary">Tạo liên hệ</h2>
             <hr />
         </div>
         <div class="card-body">
@@ -75,7 +75,7 @@
                     <div class="form-group row">
                         @Html.LabelFor(model => model.Status, new { @class = "control-label col-md-2" })
                         <div class="col-md-10">
-                            @Html.TextBoxFor(model => model.Status, new { @class = "form-control" })
+                            @Html.EditorFor(model => model.Status, new { @class = "form-control" })
                             @Html.ValidationMessageFor(model => model.Status)
                         </div>
                     </div>

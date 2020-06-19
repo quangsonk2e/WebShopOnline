@@ -1,4 +1,4 @@
-namespace Web_OnlineShop.ModelOnlineShop
+﻿namespace Web_OnlineShop.ModelOnlineShop
 {
     using System;
     using System.Collections.Generic;
@@ -12,13 +12,14 @@ namespace Web_OnlineShop.ModelOnlineShop
         public long ID { get; set; }
 
         [StringLength(250)]
+        [Display(Name = "Tên")]
         public string Name { get; set; }
 
         [StringLength(250)]
         public string MetaTitle { get; set; }
-
+        [Display(Name = "Thuộc cha")]
         public long? ParentID { get; set; }
-
+        [Display(Name = "Thứ tự hiển thị")]
         public int? DisplayOrder { get; set; }
 
         [StringLength(250)]
@@ -39,9 +40,9 @@ namespace Web_OnlineShop.ModelOnlineShop
 
         [StringLength(250)]
         public string MetaDescriptions { get; set; }
-
-        public bool? Status { get; set; }
-
-        public bool? ShowOnHome { get; set; }
+        [Display(Name = "Tình Trạng")]
+        public bool Status { get; set; }
+        [Display(Name = "Hiện ở trang chủ")]
+        public bool ShowOnHome { get; set; }
     }
 }

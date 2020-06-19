@@ -1,4 +1,4 @@
-namespace Web_OnlineShop.ModelOnlineShop
+﻿namespace Web_OnlineShop.ModelOnlineShop
 {
     using System;
     using System.Collections.Generic;
@@ -12,14 +12,17 @@ namespace Web_OnlineShop.ModelOnlineShop
         public long ID { get; set; }
 
         [StringLength(50)]
+        [Display(Name = "Tên")]
         public string Name { get; set; }
 
         [StringLength(50)]
+        [Display(Name = "Kiểu")]
         public string Type { get; set; }
 
         [StringLength(250)]
+        [Display(Name = "Giá trị")]
         public string Value { get; set; }
-
-        public bool? Status { get; set; }
+        [Display(Name = "Tình trạng")]
+        public bool Status { get; set; }
     }
 }

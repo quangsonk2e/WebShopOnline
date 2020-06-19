@@ -12,6 +12,7 @@ namespace Web_OnlineShop.ModelOnlineShop
         public int ID { get; set; }
 
         [StringLength(50)]
+        [Display(Name = "Tên")]
         public string Name { get; set; }
     }
 }

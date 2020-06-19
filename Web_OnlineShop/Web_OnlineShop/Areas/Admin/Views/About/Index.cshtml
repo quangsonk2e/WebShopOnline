@@ -1,14 +1,14 @@
 ﻿@model IEnumerable<Web_OnlineShop.ModelOnlineShop.About>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Liên hệ";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
 
 <div class="container">
 
     <!-- Page Heading -->
-    <h1 class="h3 mb-2 text-gray-800">Tables</h1>
+    <h1 class="h3 mb-2 text-gray-800">Liên hệ</h1>
 
 
     <!-- DataTales Example -->
@@ -72,9 +72,8 @@
                                     @Html.DisplayFor(modelItem => item.Status)
                                 </td>
                                 <td>
-                                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                                    @Html.ActionLink("Details", "Details", new { id = item.ID }) |
-                                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                                    @Html.ActionLink("Sửa", "Edit", new { id = item.ID }) |
+                                    @Html.ActionLink("Xoá", "Delete", new { id = item.ID })
                                 </td>
                             </tr>
                         }
