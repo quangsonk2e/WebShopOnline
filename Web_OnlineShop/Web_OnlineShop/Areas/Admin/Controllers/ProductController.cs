@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Script.Serialization;
 using System.Xml.Linq;
+using Web_OnlineShop.Common;
 using Web_OnlineShop.DAO_OnlineShop;
 using Web_OnlineShop.ModelOnlineShop;
 
@@ -14,6 +15,7 @@ namespace Web_OnlineShop.Areas.Admin.Controllers
     {
         //
         // GET: /Admin/Product/
+        [HasCredential(RoleID="VIEW_PRODUCT")]
         public ActionResult Index(int page=1)
         {
             var products = new ProductDao().getProductPage(page);
